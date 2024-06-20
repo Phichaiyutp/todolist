@@ -1,0 +1,103 @@
+body {
+  font-family: 'Lora', serif;
+  background-image: linear-gradient(100deg, #d4f1ff, #ffffff);
+  color: #1a150e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#topic {
+  font-size: 8vw;
+  margin-bottom: 20px;
+  color: #4d7ee9;
+}
+
+.add-todo-item-form{
+  margin-bottom: 10px;
+}
+.add-todo-item-form >  #content-add{
+  padding: 10px;
+  font-size: 1.2vw;
+  height: 3vh;
+  width: 30vw;
+  border: 2px solid #ced4da;
+  border-radius: 5px;
+  outline: none;
+}
+
+.add-todo-item-form >  #content-add:focus{
+  border-color: #007bff;
+}
+
+.add-todo-item-form > #add-btn{
+  height: auto;
+  width:  5vw;
+  font-size: 1.2vw;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+}
+.add-todo-item-form > #add-btn:hover {
+  background-color: #007bffd0;
+}
+.todo-item-form{
+  width: 100%;
+}
+
+.todo-item-form > .content-edit{
+  padding: 10px;
+  font-size: 1.2vw;
+  height: auto;
+  width: 100%;
+  border: 2px solid #ced4da;
+  border-radius: 5px;
+}
+
+.todo-item-form .button-group .edit-btn,
+.todo-item-form .button-group .save-btn,
+.todo-item-form .button-group .delete-btn {
+  height: auto;
+  width: auto;
+  font-size: 1vw;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+}
+.todo-item-form .button-group .save-btn{
+  background-color: #007bffd0;
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+  width: 100%;
+  max-width: 30vw;
+  max-height: 50vh; 
+  overflow-y: auto;
+  padding: 10px;
+}
+
+ul li {
+  background-color: #ffffff;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul li form {
+  display: flex;
+  align-items: center;
+}
+
+ul li form input[type="text"] {
+  margin-right: 10px;
+  flex: 1;
+}
